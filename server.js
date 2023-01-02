@@ -9,7 +9,7 @@ const moment=require("moment")
 
 const cors = require('cors')
 const corsOptions ={
-    origin:["http://localhost:3000","https://crud-practice-app.onrender.com"], 
+    origin:["http://localhost:3000","https://contest-calendar.netlify.app"], 
     credentials:true,            //access-control-allow-credentials:true
     optionSuccessStatus:200
 }
