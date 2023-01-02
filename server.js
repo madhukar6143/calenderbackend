@@ -7,6 +7,20 @@ const moment=require("moment")
 
 
 
+const cors = require('cors')
+const corsOptions ={
+    origin:["http://localhost:3000","https://crud-practice-app.onrender.com"], 
+    credentials:true,            //access-control-allow-credentials:true
+    optionSuccessStatus:200
+}
+app.use(cors(corsOptions));
+
+
+app.get("/", (req, res) => {
+    res.send("Home page");
+  });
+  
+
 const UserApi=require("./APIS/user-api");
 const calenderApi=require("./calendarApi")
 //redirect based on path
